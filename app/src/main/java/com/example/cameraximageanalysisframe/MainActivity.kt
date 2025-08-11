@@ -26,6 +26,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -95,7 +96,7 @@ class MainActivity : ComponentActivity() {
             setupAndStartCamera(preview)
         }
 
-        Box(modifier = Modifier.fillMaxSize()) {
+        Box(modifier = Modifier.fillMaxSize().systemBarsPadding()) {
             AndroidView(
                 modifier = Modifier.fillMaxSize(),
                 factory = { preview }
@@ -229,7 +230,7 @@ class MainActivity : ComponentActivity() {
         val sizes = streamConfigMap?.getOutputSizes(ImageFormat.YUV_420_888)
         val biggest = sizes?.maxByOrNull { it.width * it.height }
 
-        Log.d(TAG, "Max available YUV: ${biggest?.width}x${biggest?.height}")
+        Log.d(TAG, "Standard YUV_420_888 sizes: ${sizes?.joinToString()}")
 
         return biggest ?: FALLBACK_RES
     }
