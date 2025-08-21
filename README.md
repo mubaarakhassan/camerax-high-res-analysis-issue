@@ -26,6 +26,10 @@ ImageAnalysis should use the resolution you request.
 
 ImageAnalysis seems to do nothing.
 
+## More information?
+
+Look into the the analysis folder for more info about the which resolution works or not.
+
 ## Notes
 
 - If you only bind ImageAnalysis (no Preview), it still doesnt work with high resolution works fine

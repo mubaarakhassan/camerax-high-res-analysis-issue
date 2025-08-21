@@ -13,18 +13,18 @@ object CameraHelper {
     private const val TAG = "CameraHelper"
 
     @OptIn(ExperimentalCamera2Interop::class)
-    fun getMaxResolution(cameraInfo: CameraInfo, fallbackSize: Size): Size {
+    fun getAllResolutions(cameraInfo: CameraInfo): List<Size> {
         val cam2Info = Camera2CameraInfo.from(cameraInfo)
         val streamConfig = cam2Info.getCameraCharacteristic(
             CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP
         )
 
-        val sizes = streamConfig?.getOutputSizes(ImageFormat.YUV_420_888)
-        val maxSize = sizes?.maxByOrNull { it.width * it.height }
+        val sizes = streamConfig?.getOutputSizes(ImageFormat.YUV_420_888)?.toList() ?: emptyList()
+        val sortedSizes = sizes.sortedByDescending { it.width * it.height }
 
-        Log.d(TAG, "Available YUV sizes: ${sizes?.joinToString()}")
+        Log.d(TAG, "Available YUV resolutions: ${sortedSizes.joinToString { "${it.width}x${it.height}" }}")
 
-        return maxSize ?: fallbackSize
+        return sortedSizes
     }
 
     @OptIn(ExperimentalCamera2Interop::class)
