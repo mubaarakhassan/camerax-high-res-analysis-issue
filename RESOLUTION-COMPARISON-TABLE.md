@@ -39,6 +39,7 @@ val highResSizes = emptyList<Size>() // No high-res sizes available
 [recordings/nokia-7-plus/resolution-strategy-demo.mp4](https://github.com/mubaarakhassan/camerax-high-res-analysis-issue/blob/main/recordings/nokia-7-plus/resolution-strategy-demo.mp4)
 
 Here are the logs:
+
 [logs/nokia-7-plus/resolution-filter-logs.txt](https://github.com/mubaarakhassan/camerax-high-res-analysis-issue/blob/main/logs/nokia-7-plus/resolution-filter-logs.txt)
 
 [logs/nokia-7-plus/resolution-strategy-logs.txt](https://github.com/mubaarakhassan/camerax-high-res-analysis-issue/blob/main/logs/nokia-7-plus/resolution-strategy-logs.txt)
