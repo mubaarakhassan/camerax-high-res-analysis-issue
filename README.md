@@ -28,7 +28,7 @@ ImageAnalysis seems to do nothing.
 
 ## More information?
 
-Look into the the analysis folder for more info about the which resolution works or not.
+Look into the the [analysis](https://github.com/mubaarakhassan/camerax-high-res-analysis-issue/blob/main/RESOLUTION-COMPARISON-TABLE.md).
 
 ## Notes
 
