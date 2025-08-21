@@ -46,34 +46,34 @@ Here are the logs:
 
 ## Complete Resolution Matrix
 
-| Resolution | Width | Height | MP | Aspect | ResolutionStrategy | ResolutionFilter |
-|------------|-------|--------|----|---------|--------------------|------------------|
-| **4032×3024** | 4032 | 3024 | 12.2 | 4:3 | ❌ Silent Fail | ❌ Silent Fail |
-| **4000×3000** | 4000 | 3000 | 12.0 | 4:3 | ❌ Silent Fail | ❌ Silent Fail |
-| **4032×2016** | 4032 | 2016 | 8.1 | 2:1 | ❌ Silent Fail | ✅ **Works** |
-| **3840×2160** | 3840 | 2160 | 8.3 | 16:9 | ❌ Silent Fail | ✅ **Works** |
-| **3264×2448** | 3264 | 2448 | 8.0 | 4:3 | ❌ Silent Fail | ❌ Silent Fail |
-| **3264×1836** | 3264 | 1836 | 6.0 | 16:9 | ❌ Silent Fail | ✅ **Works** |
-| **3264×1632** | 3264 | 1632 | 5.3 | 2:1 | ❌ Silent Fail | ✅ **Works** |
-| **3200×2400** | 3200 | 2400 | 7.7 | 4:3 | ❌ Silent Fail | ❌ Silent Fail |
-| **3024×3024** | 3024 | 3024 | 9.1 | 1:1 | ❌ Silent Fail | ❌ Silent Fail |
-| **2976×2976** | 2976 | 2976 | 8.9 | 1:1 | ❌ Silent Fail | ❌ Silent Fail |
-| **2688×1512** | 2688 | 1512 | 4.1 | 16:9 | ❌ Silent Fail | ✅ **Works** |
-| **2592×1944** | 2592 | 1944 | 5.0 | 4:3 | ✅ **Works** | ✅ **Works** |
-| **2448×2448** | 2448 | 2448 | 6.0 | 1:1 | ❌ Silent Fail | ❌ Silent Fail |
-| **2304×1728** | 2304 | 1728 | 4.0 | 4:3 | ✅ **Works** | ✅ **Works** |
-| **2048×1536** | 2048 | 1536 | 3.1 | 4:3 | ✅ **Works** | ✅ **Works** |
-| **1944×1944** | 1944 | 1944 | 3.8 | 1:1 | ⚠️ Fallback | ✅ **Works** |
-| **1920×1080** | 1920 | 1080 | 2.1 | 16:9 | ⚠️ Fallback | ✅ **Works** |
-| **1600×1200** | 1600 | 1200 | 1.9 | 4:3 | ✅ **Works** | ✅ **Works** |
-| **1440×1080** | 1440 | 1080 | 1.6 | 4:3 | ✅ **Works** | ✅ **Works** |
-| **1280×960** | 1280 | 960 | 1.2 | 4:3 | ✅ **Works** | ✅ **Works** |
-| **1280×720** | 1280 | 720 | 0.9 | 16:9 | ⚠️ Fallback | ✅ **Works** |
-| **864×486** | 864 | 486 | 0.4 | 16:9 | ⚠️ Fallback | ✅ **Works** |
-| **864×480** | 864 | 480 | 0.4 | 16:9 | ⚠️ Fallback | ✅ **Works** |
-| **720×480** | 720 | 480 | 0.3 | 3:2 | ⚠️ Fallback | ✅ **Works** |
-| **640×480** | 640 | 480 | 0.3 | 4:3 | ✅ **Works** | ✅ **Works** |
-| **352×288** | 352 | 288 | 0.1 | 11:9 | ⚠️ Fallback | ✅ **Works** |
-| **320×240** | 320 | 240 | 0.1 | 4:3 | ✅ **Works** | ✅ **Works** |
-| **176×144** | 176 | 144 | 0.0 | 11:9 | ⚠️ Fallback | ✅ **Works** |
-| **144×176** | 144 | 176 | 0.0 | 9:11 | ⚠️ Fallback | ✅ **Works** |
+| Resolution    | ResolutionStrategy | ResolutionFilter |
+| ------------- | ------------------ | ---------------- |
+| **4032×3024** | ❌ Silent Fail      | ❌ Silent Fail    |
+| **4000×3000** | ❌ Silent Fail      | ❌ Silent Fail    |
+| **4032×2016** | ❌ Silent Fail      | ✅ **Works**      |
+| **3840×2160** | ❌ Silent Fail      | ✅ **Works**      |
+| **3264×2448** | ❌ Silent Fail      | ❌ Silent Fail    |
+| **3264×1836** | ❌ Silent Fail      | ✅ **Works**      |
+| **3264×1632** | ❌ Silent Fail      | ✅ **Works**      |
+| **3200×2400** | ❌ Silent Fail      | ❌ Silent Fail    |
+| **3024×3024** | ❌ Silent Fail      | ❌ Silent Fail    |
+| **2976×2976** | ❌ Silent Fail      | ❌ Silent Fail    |
+| **2688×1512** | ❌ Silent Fail      | ✅ **Works**      |
+| **2592×1944** | ✅ **Works**        | ✅ **Works**      |
+| **2448×2448** | ❌ Silent Fail      | ❌ Silent Fail    |
+| **2304×1728** | ✅ **Works**        | ✅ **Works**      |
+| **2048×1536** | ✅ **Works**        | ✅ **Works**      |
+| **1944×1944** | ⚠️ Fallback        | ✅ **Works**      |
+| **1920×1080** | ⚠️ Fallback        | ✅ **Works**      |
+| **1600×1200** | ✅ **Works**        | ✅ **Works**      |
+| **1440×1080** | ✅ **Works**        | ✅ **Works**      |
+| **1280×960**  | ✅ **Works**        | ✅ **Works**      |
+| **1280×720**  | ⚠️ Fallback        | ✅ **Works**      |
+| **864×486**   | ⚠️ Fallback        | ✅ **Works**      |
+| **864×480**   | ⚠️ Fallback        | ✅ **Works**      |
+| **720×480**   | ⚠️ Fallback        | ✅ **Works**      |
+| **640×480**   | ✅ **Works**        | ✅ **Works**      |
+| **352×288**   | ⚠️ Fallback        | ✅ **Works**      |
+| **320×240**   | ✅ **Works**        | ✅ **Works**      |
+| **176×144**   | ⚠️ Fallback        | ✅ **Works**      |
+| **144×176**   | ⚠️ Fallback        | ✅ **Works**      |
